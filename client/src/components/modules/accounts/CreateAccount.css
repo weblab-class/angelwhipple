@@ -1,0 +1,44 @@
+.create-container {
+  align-items: center;
+  width: max-content;
+}
+
+.create-label {
+  display: flex;
+  font-size: small;
+  column-gap: 8px;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.create-input {
+  width: 60%;
+  height: auto;
+  -webkit-text-fill-color: var(--black);
+  padding: 2%;
+  border-radius: var(--s);
+  border-color: inherit;
+  box-shadow: inset 0px -1px 11px 5px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes msgFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.info-icon-create {
+  fill: white;
+  font-size: 24px;
+  opacity: 0.5;
+  transition-duration: 0.5s;
+}
+
+.info-icon-create:hover {
+  opacity: 1;
+  fill: var(--white);
+  transition-duration: 0.5s;
+}

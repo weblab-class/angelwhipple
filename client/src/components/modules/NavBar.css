@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--black);
+}
+
+.nav-bar-container {
+  position: relative;
+  /* overflow: hidden; */
+  z-index: 1;
+  background-color: var(--orange);
+  display: flex;
+  flex-direction: row-reverse;
+  column-gap: var(--l);
+  align-items: center;
+  height: 100%;
+  width: inherit;
+  padding: 0 2% 0 3%;
+  -webkit-text-fill-color: var(--white);
+  white-space: nowrap;
+}
+
+.nav-icon {
+  padding: 1%;
+  color: var(--white);
+  transition-duration: 0.7s;
+  width: 25px;
+  height: auto;
+  max-height: 25px;
+}
+
+.nav-icon:hover,
+.nav-icon:visited,
+.nav-icon-selected {
+  padding: 1%;
+  width: 25px;
+  height: auto;
+  max-height: 25px;
+  transition-duration: 0.7s;
+  color: var(--hot-orange);
+}
+
+.nav-img {
+  border-radius: 50%;
+  max-height: 40px;
+  width: auto;
+  border: 2px solid transparent;
+  transition-duration: 0.7s;
+}
+
+.nav-img-selected {
+  border-radius: 50%;
+  max-height: 40px;
+  width: auto;
+  border: 2px solid var(--hot-orange);
+  transition-duration: 0.7s;
+}
+
+.nav-img:hover {
+  border: 2px solid var(--hot-orange);
+  transition-duration: 0.7s;
+}
+
+.nav-dropdown-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-dropdown-content {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  top: 110%;
+  background-color: white;
+  -webkit-text-fill-color: black;
+  min-width: fit-content;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  padding: 10%;
+  border-radius: var(--xs);
+  animation: fadeIn 0.5s;
+}
+
+.search-bar {
+  padding: 1%;
+  flex: 1;
+  border-radius: var(--s);
+  border: solid var(--orange);
+  box-shadow: inset 0px -1px 11px 5px rgba(0, 0, 0, 0.2);
+  -webkit-text-fill-color: var(--black);
+}
+
+.search-filters-container {
+  position: relative;
+  width: fit-content;
+}
+
+.search-filter {
+  display: flex;
+  column-gap: 5px;
+}
+
+.search-bar-container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  column-gap: 5px;
+  width: 50%;
+  max-height: 50px;
+}
+
+.alt-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+
+.community-dropdown {
+  position: absolute;
+  left: 0;
+}

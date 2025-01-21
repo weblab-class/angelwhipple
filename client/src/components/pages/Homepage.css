@@ -1,0 +1,84 @@
+.background {
+  position: fixed;
+  display: block;
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: inherit;
+  left: 0;
+  z-index: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* LINEAR GRADIENT */
+.animation-container {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  z-index: -1; /* Place it behind other content */
+  animation: fadeIn 2.5s;
+  justify-content: center;
+}
+
+/* HOUSE */
+.animation2-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2; /* Place it behind other content */
+  justify-content: center;
+}
+
+.buttons-container {
+  position: relative;
+  bottom: 15%;
+  display: flex;
+  column-gap: 20%;
+  width: inherit;
+  justify-content: center;
+}
+
+.landing-btn {
+  font-size: large;
+  background-color: inherit;
+  border: 1px solid transparent;
+  border-radius: var(--s);
+  -webkit-text-fill-color: black;
+  box-shadow: 0px 5px 20px 8px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.7s;
+  padding: 1%;
+  animation: fadeIn 2s;
+  opacity: 0.8;
+}
+
+.landing-btn:hover {
+  opacity: 1;
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
+  -webkit-text-fill-color: white;
+  transition-duration: 0.7s;
+  box-shadow: 0px 0px 14px 12px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  top: 15%;
+  font-weight: 700;
+  animation: headerFadeIn 1s;
+  opacity: 0.5;
+}
+
+@keyframes headerFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}

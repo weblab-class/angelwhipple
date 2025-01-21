@@ -1,0 +1,287 @@
+/**
+* Welcome to your ✨𝔲𝔱𝔦𝔩𝔦𝔱𝔶 𝔰𝔱𝔶𝔩𝔢𝔰✨!
+* This file includes utility classes that are super simple
+* and can be used to add general styles; variable definitions
+* for colors; and styles to html, body, and other high level
+* DOMs.
+* 
+* All utility classes start with a `u-` and all do
+* one basic CSS thing (for example, making the font-weight
+* 600 for bolding) or are super generic.
+* 
+* This is 𝙉𝙊𝙏 the place to define classes for components or
+* do rigorous styling. You shoud not need to change this file
+* much after initial creation.
+*/
+
+/* TODO: REPLACE WITH YOUR OWN FONT! */
+@import url("https://fonts.googleapis.com/css2?family=Exo&display=swap");
+
+:root {
+  --orange: #ff8400;
+  --hot-orange: #bd1209;
+  --primary: #0a12ff;
+  --primary-dim: #4249ff;
+  --primary-light: #575dfb;
+  --darkgrey: #d4d4d4;
+  --medgrey: #e0e0e0;
+  --grey: #f7f7f7;
+  --white: #fff;
+  --black: #020006;
+  --red: #bd1209;
+  /* --glow-1: #8185fa;
+  --glow-2: #666bfd;
+  --glow-3: #4249ff;
+  --glow-4: #0a12ff;
+  --glow-5: #090fc5; */
+  --glow-1: #ff932e;
+  --glow-2: #ed7429;
+  --glow-3: #ed6111;
+  --glow-4: #d74a13;
+  --glow-5: #d71313;
+  --xs: 4px;
+  --s: 8px;
+  --m: 16px;
+  --l: 24px;
+  --xl: 30px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+form {
+  flex-grow: 1;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+iframe {
+  border: none;
+}
+
+ul {
+  list-style-type: circle;
+  margin-left: 5%;
+  text-align: start;
+}
+
+label {
+  white-space: nowrap;
+}
+
+input {
+  padding: 1%;
+  -webkit-text-fill-color: black;
+}
+
+.u-flex {
+  display: flex;
+}
+
+.u-flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.u-justifyCenter {
+  justify-content: center;
+}
+
+.u-alignCenter {
+  align-items: center;
+}
+
+.u-textCenter {
+  text-align: center;
+}
+.u-inlineBlock {
+  display: inline-block;
+}
+
+.u-bold {
+  font-weight: 600;
+}
+
+.u-textCenter {
+  text-align: center;
+}
+
+.u-relative {
+  position: relative;
+}
+
+.u-pointer {
+  cursor: pointer;
+}
+
+.u-link {
+  color: var(--primary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.u-link:hover {
+  color: var(--primary--dim);
+}
+
+/* PRESETS */
+
+.floatRight {
+  float: right;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.default-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--orange);
+  width: fit-content;
+  height: fit-content;
+  padding: 5%;
+  border-radius: var(--m);
+  -webkit-text-fill-color: var(--white);
+  row-gap: var(--l);
+  /* align-self: center; */
+  animation: fadeIn 1s;
+}
+
+.default-button {
+  border: none;
+  -webkit-text-fill-color: inherit;
+  background-color: inherit;
+  font-size: small;
+  font-weight: 200;
+  white-space: nowrap;
+  transition-duration: 1s;
+  padding: 2%;
+}
+
+.default-button:hover {
+  -webkit-text-fill-color: var(--hot-orange);
+  transition-duration: 1s;
+}
+
+.default-icon {
+  font-size: small;
+  fill: inherit;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.default-icon:hover {
+  fill: var(--orange);
+}
+
+.action-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  column-gap: 10%;
+}
+
+.opaque-text {
+  opacity: 0.7;
+  max-width: 60%;
+  overflow: hidden;
+  word-wrap: break-word;
+  font-size: small;
+  font-weight: 300;
+}
+
+.error-text {
+  font-size: small;
+  -webkit-text-fill-color: darkred;
+  animation: msgFade 0.5s;
+}
+
+.error-text-hidden {
+  font-size: small;
+  opacity: 0;
+}
+
+.pad-light {
+  padding: 2%;
+}
+
+.font-medium {
+  font-size: medium;
+}
+.font-small {
+  font-size: small;
+}
+.font-large {
+  font-size: large;
+}
+
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}

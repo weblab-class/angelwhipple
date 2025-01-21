@@ -1,0 +1,35 @@
+.sidebar-split {
+  background-color: var(--white);
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  overflow-x: hidden;
+  top: inherit;
+  left: 0;
+}
+
+.mainpage-split {
+  background-color: var(--white);
+  height: 100%;
+  width: 80%;
+  position: fixed;
+  overflow-x: hidden;
+  top: inherit;
+  left: 20%;
+}
+
+.input {
+  width: 100%;
+  height: auto;
+  -webkit-text-fill-color: var(--black);
+  padding: 2%;
+  text-align: center;
+}
+
+.code-nums {
+  width: 40%;
+}
+
+.code-chars {
+  width: 10%;
+}
