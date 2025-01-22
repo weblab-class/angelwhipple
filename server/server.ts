@@ -2,7 +2,6 @@ import express, { Request, Response } from "express";
 import http from "http";
 import session from "express-session"; // Allows us to store information about a client
 import mongoose from "mongoose"; // Wrapper around MongoDB
-import dotenv from "dotenv"; // Allows us to use environmental variables
 import morgan from "morgan"; // Request logger (https://github.com/expressjs/morgan). Can be removed if you wish.
 import path from "path"; // Allows us to retrieve file paths
 import auth from "./auth"; // weblab authentication helper
@@ -13,7 +12,7 @@ import assert from "assert";
 import request from "request";
 import { resolve } from "../webpack.config";
 // Loads environmental variables
-dotenv.config({});
+require("dotenv").config({}); // Allows us to use environmental variables
 
 // Server configuration below
 const mongoConnectionURL = process.env.MONGO_SRV;
