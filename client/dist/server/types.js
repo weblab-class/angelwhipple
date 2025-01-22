@@ -11,6 +11,6 @@ var CommunityType;
 exports.LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 exports.PRIVACY_POLICY = "client/src/assets/privacy-policy.txt";
 exports.SERVICE_TERMS = "client/src/assets/terms-of-service.txt";
-// export const DOMAIN = "https://crashmit-6571970b206b.herokuapp.com";
+export const DOMAIN = "https://crashmit-6571970b206b.herokuapp.com";
 // export const DOMAIN = "http://localhost:5050/api/user/linkedin"
-exports.DOMAIN = "https://angelwhipple.onrender.com";
+// exports.DOMAIN = "https://angelwhipple.onrender.com";

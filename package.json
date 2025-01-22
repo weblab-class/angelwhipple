@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite",
     "hotloader": "webpack serve --config ./webpack.config.js --mode development --port 5050",
-    "start": "node client/dist/server/server.js",
+    "start": "nodemon --exec ts-node server/server.ts",
     "build": "webpack --config ./webpack.config.js --mode production"
   },
   "author": "awhipp",
