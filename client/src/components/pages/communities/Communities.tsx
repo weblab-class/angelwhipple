@@ -356,10 +356,8 @@ const Communities = (props: Props) => {
             )}
           </div>
         ) : (props.userId &&
-            (communityType == CommunityType.UNIVERSITY ||
-              communityType == CommunityType.WORKPLACE) &&
-            verified === true) ||
-          communityType == CommunityType.LIVING ||
+          (communityType == CommunityType.UNIVERSITY ||
+            communityType == CommunityType.WORKPLACE) && verified) || communityType == CommunityType.LIVING ||
           communityType == CommunityType.LOCAL ? (
           <div className="centered default-container">
             <div className="u-flex">

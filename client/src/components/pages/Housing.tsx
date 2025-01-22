@@ -151,7 +151,7 @@ const Housing = (props: Props) => {
           </div>
         ) : view === "HOST" ? (
           <>
-            <h4>Find a subscription plan that meets your needs</h4>
+            <h4>Host details here</h4>
             <button className="default-button u-pointer" onClick={() => setView("")}>
               Go back
             </button>
@@ -165,7 +165,7 @@ const Housing = (props: Props) => {
             <button className="default-button u-pointer" onClick={() => setView("TRAVELER")}>
               Traveler
             </button>
-            <div id="map" className="map-container"></div>
+            {/*<div id="map" className="map-container"></div>*/}
           </>
         )}
       </div>
